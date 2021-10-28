@@ -1,34 +1,29 @@
 package Tests;
 
+import Core.DriverFactory;
 import Core.Web;
 import ExcelMapping.Sheet;
 import Pages.HomePage;
 import Pages.LoginPage;
 import org.junit.After;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterMethod;
 
 import static utils.Utils.directorySheets;
 
-public class LoginTests {
+public class LoginTests extends BaseTest{
 
-    WebDriver driver = Web.criaChrome();
 
     LoginPage loginPage;
     HomePage homePage;
 
-    @After
-    public void finalizar() {
-        driver.quit();
-    }
-
 
     @Test
     public void LoginValido() {
-        loginPage = new LoginPage(driver);
-        homePage = new HomePage(driver);
+        loginPage = new LoginPage();
+        homePage = new HomePage();
         Sheet planilha = new Sheet(directorySheets("teste.xlsx"), "plan1");
 
         String usuario = planilha.getData("Login",1);
@@ -43,7 +38,7 @@ public class LoginTests {
 
     @Test
     public void LoginInvalido() {
-        loginPage = new LoginPage(driver);
+        loginPage = new LoginPage();
         Sheet planilha = new Sheet(directorySheets("teste.xlsx"), "plan1");
 
         String usuario = planilha.getData("Login",2);
@@ -59,7 +54,7 @@ public class LoginTests {
 
     @Test
     public void SenhaInvalido() {
-        loginPage = new LoginPage(driver);
+        loginPage = new LoginPage();
 
         Sheet planilha = new Sheet(directorySheets("teste.xlsx"), "plan1");
 

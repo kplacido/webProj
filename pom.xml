@@ -8,6 +8,28 @@
     <artifactId>Projeto</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <build>
+        <testSourceDirectory>src</testSourceDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M5</version>
+                <configuration>
+                    <forkCount>4</forkCount>
+                    <reuseForks>false</reuseForks>
+                    <reportsDirectory>target/surefire-reports-${surefire.forkNumber}</reportsDirectory>
+                    <includes>
+                        <include>Suites/*.java</include>
+                    </includes>
+                </configuration>
+            </plugin>
+        </plugins>
+
+    </build>
+
+
+
     <dependencies>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>

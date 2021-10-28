@@ -4,17 +4,16 @@ import Pages.LoginPage;
 import org.openqa.selenium.WebDriver;
 
 public class Flows {
-    WebDriver driver;
 
-    public Flows (WebDriver driver) {
-        this.driver = driver;
+    public Flows () {
+
     }
 
     LoginPage loginPage;
 
     public void logar(){
 
-        loginPage = new LoginPage(driver);
+        loginPage = new LoginPage();
 
         loginPage.informarLogin("cleyton.placido");
         loginPage.informarSenha("base2");

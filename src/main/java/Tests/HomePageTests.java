@@ -1,24 +1,26 @@
 package Tests;
 
+import Core.DriverFactory;
 import Core.Web;
 import Flows.Flows;
 import Pages.HomePage;
-import Pages.LoginPage;
+import org.junit.After;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 
-public class HomePageTests {
-    WebDriver driver = Web.criaChrome();
-
+public class HomePageTests extends BaseTest {
     HomePage homePage;
     Flows flows;
+
+
 
     @Test
     public void validarExibicaoMenus(){
 
-        homePage = new HomePage(driver);
-        flows = new Flows(driver);
+        homePage = new HomePage();
+        flows = new Flows();
 
         String menuMyView = "My View";
         String menuViewIssues = "View Issues";

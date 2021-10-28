@@ -1,14 +1,12 @@
 package Pages;
 
 
+import Core.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class LoginPage extends PageBase{
 
-    public LoginPage(WebDriver driver) {
-        super(driver);
-    }
 
     By userNameField = By.xpath("//*[@name='username']");
     By passwordField = By.xpath("//*[@name='password']");

@@ -1,5 +1,6 @@
 package Pages;
 
+import Core.DriverFactory;
 import com.gargoylesoftware.htmlunit.html.Keyboard;
 import org.junit.After;
 import org.junit.Before;
@@ -11,24 +12,18 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import static Core.DriverFactory.getDriver;
+
 public class PageBase {
 
-    private WebDriver driver;
-
-
-
-    public PageBase (WebDriver driver) {
-        this.driver = driver;
-    }
-
     public void waitFindElement(By elemento) {
-        WebDriverWait load = new WebDriverWait(driver, 30);
+        WebDriverWait load = new WebDriverWait(getDriver(), 30);
         load.until(ExpectedConditions.visibilityOfElementLocated(elemento));
     }
 
     public WebElement loadWaitElement(By elemento) {
         waitFindElement(elemento);
-        return this.driver.findElement(elemento);
+        return getDriver().findElement(elemento);
     }
 
     public boolean checkIfElementVisible(By element) {

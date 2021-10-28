@@ -1,21 +1,27 @@
 package Core;
+import Core.DriverFactory;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
+import utils.*;
+
+import static Core.DriverFactory.getDriver;
+
 
 public class Web {
 
-    public static WebDriver criaChrome() {
-        System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver.exe");
 
-        WebDriver driver = new ChromeDriver();
+    public static void iniciarPagina() {
 
-        driver.manage().window().maximize();
 
-        driver.get("https://mantis-prova.base2.com.br/login_page.php");
-        driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
-        return driver;
+
+        getDriver().manage().window().maximize();
+
+        getDriver().get("https://mantis-prova.base2.com.br/login_page.php");
+        getDriver().manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
+
     }
+
 }
