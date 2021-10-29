@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="7381" started-at="2021-10-27T23:11:08 BRT" finished-at="2021-10-27T23:11:15 BRT">
+  <suite name="Surefire suite" duration-ms="22665" started-at="2021-10-29T20:46:59 BRT" finished-at="2021-10-29T20:47:22 BRT">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="7381" started-at="2021-10-27T23:11:08 BRT" finished-at="2021-10-27T23:11:15 BRT">
+    <test name="Surefire test" duration-ms="22665" started-at="2021-10-29T20:46:59 BRT" finished-at="2021-10-29T20:47:22 BRT">
       <class name="Tests.HomePageTests">
-        <test-method status="PASS" signature="validarExibicaoMenus()" name="validarExibicaoMenus" duration-ms="7317" started-at="2021-10-27T23:11:08 BRT" finished-at="2021-10-27T23:11:15 BRT">
+        <test-method status="PASS" signature="validarExibicaoMenus()" name="validarExibicaoMenus" duration-ms="22597" started-at="2021-10-29T20:46:59 BRT" finished-at="2021-10-29T20:47:22 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validarExibicaoMenus -->

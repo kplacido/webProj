@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="20502" started-at="2021-10-27T23:11:08 BRT" finished-at="2021-10-27T23:11:28 BRT">
+  <suite name="Surefire suite" duration-ms="48055" started-at="2021-10-29T20:46:59 BRT" finished-at="2021-10-29T20:47:47 BRT">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="20502" started-at="2021-10-27T23:11:08 BRT" finished-at="2021-10-27T23:11:28 BRT">
+    <test name="Surefire test" duration-ms="48055" started-at="2021-10-29T20:46:59 BRT" finished-at="2021-10-29T20:47:47 BRT">
       <class name="Tests.LoginTests">
-        <test-method status="PASS" signature="LoginValido()" name="LoginValido" duration-ms="7699" started-at="2021-10-27T23:11:08 BRT" finished-at="2021-10-27T23:11:16 BRT">
+        <test-method status="PASS" signature="LoginValido()" name="LoginValido" duration-ms="15597" started-at="2021-10-29T20:46:59 BRT" finished-at="2021-10-29T20:47:15 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginValido -->
-        <test-method status="PASS" signature="SenhaInvalido()" name="SenhaInvalido" duration-ms="12742" started-at="2021-10-27T23:11:08 BRT" finished-at="2021-10-27T23:11:21 BRT">
+        <test-method status="PASS" signature="SenhaInvalido()" name="SenhaInvalido" duration-ms="28959" started-at="2021-10-29T20:46:59 BRT" finished-at="2021-10-29T20:47:28 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SenhaInvalido -->
-        <test-method status="PASS" signature="LoginInvalido()" name="LoginInvalido" duration-ms="17725" started-at="2021-10-27T23:11:08 BRT" finished-at="2021-10-27T23:11:26 BRT">
+        <test-method status="PASS" signature="LoginInvalido()" name="LoginInvalido" duration-ms="42040" started-at="2021-10-29T20:46:59 BRT" finished-at="2021-10-29T20:47:42 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginInvalido -->
