@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: Suites.HomePageSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.36 s - in Suites.HomePageSuite
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.401 s <<< FAILURE! - in Suites.HomePageSuite
+Tests.HomePageTests.validarExibicaoMenus on validarExibicaoMenus(Tests.HomePageTests)  Time elapsed: 5.791 s  <<< FAILURE!
+java.lang.NullPointerException
+	at Tests.HomePageTests.validarExibicaoMenus(HomePageTests.java:33)
+

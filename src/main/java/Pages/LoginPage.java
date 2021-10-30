@@ -2,6 +2,9 @@ package Pages;
 
 
 import Core.DriverFactory;
+import Core.ExtentReport;
+import com.relevantcodes.extentreports.LogStatus;
+import com.relevantcodes.extentreports.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -17,6 +20,7 @@ public class LoginPage extends PageBase{
 
     public void informarLogin (String texto) {
         sendKeys(userNameField,texto);
+        ExtentReport.test.log(LogStatus.PASS, "Usuario informado");
     }
     public void informarSenha(String texto) {
         sendKeys(passwordField,texto);

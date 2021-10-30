@@ -9,11 +9,15 @@ utils\Utils.class
 ExcelMapping\Sheet.class
 Pages\HomePage.class
 Tests\LoginTests.class
+Core\Propriedades$navegadores.class
 Tests\BaseTest.class
 ExcelMapping\ExcelReaderHelper.class
 Suites\HomePageSuite.class
 Pages\googlePage.class
+Core\Propriedades$tiposExecuacao.class
 Core\Propriedades.class
 Core\Web.class
+Core\ExtentReport.class
 Pages\LoginPage.class
 Core\DriverFactory.class
+Core\DriverFactory$2.class
